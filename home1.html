@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment2</title>
+    <style>
+        nav{
+            background-color: black;
+            color: white;
+             
+        
+        }
+        ol{
+            display: flex;
+            list-style-type: none;
+        }
+       
+        ol li{
+            cursor: pointer;
+            text-align: center;
+            flex-grow: 1;
+            margin-top: 10px;
+            padding-top: 10px;
+            padding-bottom: 5px;
+            /* vertical-align: top; */
+            transition: 0.4s ease;
+        }
+        ol li:hover{
+            background-color: white;
+            color: black;
+        }
+        input{
+            border-radius: 20px;
+            margin-bottom: 10px;
+            width: 113px;
+            border: black 2px solid;
+            text-align: center;
+        }
+        li:first-child{
+            flex-grow: 5;
+            font-size: 25px;
+
+
+        }
+        img{
+            height: 550px;
+            width: 1320px;
+            
+        }
+        .some {
+            position: relative;
+        }
+
+        .some img {
+            width: 100%;
+            
+            
+        }
+        .some1 {
+            color: black;
+            position: absolute;
+            top: 20%;
+            right: 5%;
+            width: 28%;
+        }
+        *{
+            margin: 0%;
+        }
+        .flex {
+            display: flex;
+            
+        }
+
+        .flex .exp-width {
+            width: 50%;
+            margin-bottom: 20%;
+            margin-top: 10%;
+        }
+
+        .center {
+            width: 80%;
+            margin: auto;
+        }
+        .some3{
+            background-color: transparent;
+            color: black;
+            margin-top: 10px;
+            border: black 3px solid;
+            border-radius: 8px;
+            margin-left: 18px;
+        }
+        .box{
+            display: flex;
+            align-items: center;
+            
+        }
+        .box1{
+            background-color: black;
+            height: 180px;
+            width: 220px;
+            position: relative;
+            /* justify-content: center; */
+             margin-left: 140px;
+             margin-top: -110px;
+             margin-right: 30px;
+             color: white;
+             text-align: left;
+             font-style: oblique;
+            /* top: 10px; */
+
+            }
+            h6{
+                margin-top: 15px;
+                font-style: normal;
+            }
+            footer{
+                height: 200px;
+                width: 1347px;
+                background-color: black;
+                
+            }
+            .footer{
+                color: white;
+                display: flex;
+                
+            }
+            .footer1 h3{
+                margin-top: 5px;
+                align-items: center;
+            }
+            .footer2 img{
+
+                height: 45px;
+                width: 25px;
+                margin-top: 70px;
+                margin-left: 150px;
+                background-color: transparent;
+                
+            }
+           
+            
+
+
+            
+
+
+
+
+
+    </style>
+</head>
+<body>
+        <nav>
+            <ol>
+                <li> <b> Gentium.</b></li>
+                <li>Home</li>
+                <li>Services</li>
+                <li>About</li>
+                <li>Blog</li>
+                <li>Contact</li>
+                <li>
+                    <input type="search" placeholder="GET STARTED">
+                </li>
+            </ol>
+        </nav>
+        <div class="some">
+            <img src="picture1.jpg.jpg" alt="">
+            <div class="some1">
+                <h1>We're a Digital </h1>
+                <h1>Agency</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem laboriosam voluptatum quae, officia modi a minima dolore maxime nihil incidunt?</p>
+                <button class="some3">More Details</button>
+            </div>
+        </div>
+       
+    
+        <div class="box">
+            <div class="box1"> <b> Future Vision </b> 
+                <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, consectetur.</h6>
+            </div>
+            <div class="box1"> <b>Product Design</b>  
+                <h6>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium itaque atque qui?</h6>
+            </div>
+            <div class="box1"> <b> Inovative Solutions </b> 
+                <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, magni recusandae!</h6>
+            </div>
+        </div>
+
+        <div class="flex center">
+            <div class="exp-width">
+                <h5>WAYS TO SUPPORT</h5>
+                <h2>Support Acme Outdoors.</h2>
+            </div>
+            <div class="exp-width">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quidem asperiores praesentium id
+                    soluta quaerat consectetur, temporibus commodi, eum, explicabo deserunt perspiciatis accusamus voluptate
+                    dolor libero reiciendis quas. Quae, culpa!</p>
+            </div>
+            <div class="exp-width">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quidem asperiores praesentium id
+                    soluta quaerat consectetur, temporibus commodi, eum, explicabo deserunt perspiciatis accusamus voluptate
+                    dolor libero reiciendis quas. Quae, culpa!</p>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer1">
+                <h1>MORE INFO:</h1> <hr>
+                <h3>What we do</h3> 
+                <h3>Our Work</h3>
+                <h3>Company</h3>
+                <h3>Contact</h3>
+            </div>
+            <!-- <div class="footer2"> <img src="logo1.png" alt=""></div>
+            <div class="footer2"> <img src="logo2.png" alt=""></div> -->
+        </footer>
+</body>
+</html>

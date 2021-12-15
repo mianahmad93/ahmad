@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         @keyframes fan{
+            0%{
+                background: green ;
+                transform: rotate(0deg);
+
+            }
+            40%{
+                background:blue; 
+                /* transform: rotate(0deg);    */
+            }
+            70%{
+                background: purple;
+                /* transform: rotate(360deg); */
+                
+            }
+            100%{
+                background: red;
+                transform: rotate(360deg);
+            }
+        }
+        #tank{
+            margin: auto;
+            height: 150px;
+            width: 100px;
+            background: green;
+            animation: fan 2s linear 0s;
+            animation-iteration-count: infinite;
+        } 
+      
+    </style>
+</head>
+<body>
+    <!-- two types of animation 1.transition 2. keyframe  -->
+    <div id="tank"></div>
+    <div id="tank"></div>
+    <div id="tank"></div>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home3</title>
+    <style>
+        nav{
+            background-color: transparent;
+        }
+        ol{
+            display: flex;
+            color: white;
+            list-style-type: none;
+        }
+        ol li{
+            flex-grow: 1;
+            padding-top: 10px;
+            padding-bottom: 5px;
+            text-align: center;
+            position: relative;
+            font-size: 23px;
+            transition: 0.5s ease;
+            cursor: pointer;
+            margin: auto;
+            max-width: 1200px;
+          
+           
+        }
+        ol li:hover{
+            background-color: white;
+            color: black;
+        }
+        li:first-child{
+            flex-grow: 5;
+            
+        }
+        
+
+            
+       
+        .pic img{
+            margin: 0%;
+            padding: 0%;
+            height: 700px;
+            width: 1348px;
+            margin-top: -65px;
+    
+            
+        }
+        *{
+            margin: 0%;
+        }
+        .main{
+            margin-top: -400px;
+            margin-left: 480px;
+        }
+        .main h1{
+            font-size: 50px;
+            color: white;
+        }
+       
+        .main:first-child{
+            font-size: 25px;
+            margin-left: 500px;
+            margin-top: -150px;
+            color: white;
+        }
+        
+        .main button{
+            background-color: transparent;
+            font-size: 30px;
+            color: white;
+            cursor: pointer;
+            border: white 2px solid;
+        }
+        .main button:hover{
+            background-color: white;
+            color: black;
+            transition: 0.5s ease;
+        } 
+        .parent{
+            position: relative;
+        }
+        .parent:hover{
+            display: list-item;
+        }
+        .child{
+            
+            display: none;
+            position: absolute;
+            background-color:black;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ol>
+            <li> <img src="logo.jpg" alt=""></li>
+            <li>Home</li>
+            <li>Services</li>
+            <li class="parent">Gallery
+                <ol class="child">
+                    <li class="sub-child">Photos</li>
+                    <li>Videos</li>
+                </ol>
+            </li>
+            <li>About</li>
+            <li>Contact</li>
+        </ol>
+    </nav>
+
+    <div class="pic"> <img src="picture4.jpg" alt=""></div>
+    <div class="main">
+        <h1>WEBDEV Creation</h1>
+        <button>WATCH VIDEO</button>
+        <button>LEARN MORE</button>
+        
+    </div>
+   
+</body>
+</html>

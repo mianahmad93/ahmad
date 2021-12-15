@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        nav{
+            background-color: purple;
+            border-radius: 20px;
+        }
+
+       ol{
+           display: flex;
+           list-style-type: none;
+           width: 60%;
+           margin: auto;
+           color:white;
+       }
+       li{
+
+           flex-grow: 1;
+           padding-top: 10px;
+           padding-bottom: 10px;
+           text-align: center;
+           cursor: pointer;
+       }
+        .some{
+           text-align: right;
+           text-decoration: none;
+           margin-top: 7px;
+           margin-right: 150px;
+           color: white;
+           font-size: 20px;
+       } 
+       /* input{
+           border-radius: 40px;
+           text-align: center;
+           margin-top: 4px;
+
+       } */
+       ol li:hover{
+           background-color:black;
+       }
+       .main1,
+        .main3{
+            display: none;
+            position: absolute;
+            background-color:black;
+        }
+        .main1 li{
+            text-align: center;
+        }
+        .main{
+            position: relative;
+            
+        }
+        .main:hover .main1{
+            display: list-item;
+        }
+        .main3{
+            left: 100px;
+            padding: 20px;
+        }
+        .main2:hover .main3{
+            display: list-item;
+        }
+        input{
+            margin-right: 20px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            border-radius: 15px;
+            border: black 2px solid;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ol>
+           <a href="" class="some">BEXAR</a>
+           <li>Home</li>
+           <li class="main">
+               About
+              <ol class="main1">
+                  <li class="main2">
+                      Email
+                 <ol class="main3">
+                     <li>Username</li>
+                     <li>ID Name</li>
+                     <li>Password</li>
+                     <li>Forget</li>
+                 </ol>
+                  </li>
+                  <li>Adress</li>
+                  <li>CNIC</li>
+                  <li>Nubmer</li>
+              </ol>
+           </li>
+           <li> Contact</li>
+           <li>PAGES</li>
+           <input type="search" placeholder="GET STARTED">
+           
+        </ol>
+    </nav>
+</body>
+</html>

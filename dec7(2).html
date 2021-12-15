@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>plain</title>
+    <style>
+        @keyframes plain{
+            0%{
+                left: 0%;
+                bottom: 0%;
+            }
+            40%{
+                /* left: 0; */
+                bottom: 60%;
+            }
+            70%{
+                left: 60%;
+                bottom: 50%;
+                opacity: 0;
+            }
+            100%{
+                left: 90%;
+                bottom: 0%;
+            }
+        }
+        #plain{
+            position: absolute;
+            bottom: 0%;
+            right: 0%;
+            animation: plain 6s linear 0s;
+        }
+
+    </style>
+</head>
+<body>
+    <img  id="plain" src="plain.png" alt="">
+</body>
+</html>

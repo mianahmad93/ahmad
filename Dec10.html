@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .main{
+            padding: 20px;
+            display: flex;
+            height: 100%;
+            width: 100%;
+            background-color: black;
+        }
+        .box{
+            /* flex-grow: 1; */
+            margin: 10px;
+            height: 400px;
+            width: 250px;
+            transition: .3s;
+            /* box-shadow: 3px 3px 10px white; */
+        }
+        .box:hover{
+            transform: scale(1.1);
+            margin: 10px;
+        }
+        .box:nth-child(1):hover{
+            transform: rotate(5deg);
+        }
+        .box:nth-child(1){
+            background-color: blueviolet;
+        }
+        .box:nth-child(2){
+            background-color: green;
+        }
+        .box:nth-child(3):hover{
+            transform: rotate(-5deg);
+        }
+        .box:nth-child(3){
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+    <div class="box"> <h1>Heading 1</h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis maxime deleniti aliquam dolorem architecto eum voluptate illum exercitationem porro dolor.</div>
+    <div class="box"> <h1>Heading 2</h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia repellendus, pariatur perspiciatis animi vel necessitatibus beatae id in, perferendis error consequatur atque vero ex ut.</div>
+    <div class="box"> <h1>Heading 3</h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error distinctio, incidunt atque doloremque voluptates voluptas magnam ratione ipsam ex ut quibusdam omnis, obcaecati voluptatem ducimus. Molestiae, repudiandae.</div>
+    </div>
+</body>
+</html>

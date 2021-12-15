@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          .main{
+              background-color: red;
+              padding: 13px;
+          }
+          .main ul{
+              display: flex;
+              list-style-type: none;
+          }
+          .main ul li{
+              flex-grow: 1; 
+           }
+           .main ul li a{
+               text-decoration: none;
+               color: black;
+           }
+           .main ul li:first-child{
+               flex-grow: 5;
+               margin-left: 50px;
+           }
+
+          *{
+              margin: 0%;
+          }
+          
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="main">
+            <ul>
+                <li> <a href="#">Home</a> </li>
+                <li><a href="#">About
+                    
+                        <li>list A </li>
+                        <li>list B </li>
+                    
+                </a></li>
+                <li> <a href="#"> Services</a></li>
+                <li> <a href="#"> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
