@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dec2</title>
+    <style>
+         /* #parent{
+            height: 400px;
+            width: 500px;
+            border: red 3px solid;
+            position: absolute;
+            display: table;
+
+
+        }
+        #sub-parent{ 
+            display: table-cell;
+            vertical-align:middle;
+            
+
+        }
+        #child{
+            background-color: yellow;
+            height: 100px;
+            width: 100px;
+            margin: auto; 
+            position: absolute;
+            top: 0%;
+            bottom: 0%;
+            left: 0%;
+            right: 0%;
+            margin: auto;
+
+        } */
+        nav{
+            background-color: purple;
+        }
+        ol{
+            width: 60%;
+            margin: auto;
+            display: flex;
+            list-style-type: none;
+            color: white;
+        }
+        ol li{
+            flex-grow: 1;
+            cursor:pointer;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+        ol li:hover{
+            background-color:black;
+        }
+        .child-menu,
+        .grand-child-menu{
+            display: none;
+            position: absolute;
+            background-color:black;
+        }
+        .child-menu li{
+            text-align: left;
+        }
+        .drop-menu{
+            position: relative;
+            
+        }
+        .drop-menu:hover .child-menu{
+            display: list-item;
+        }
+        .grand-child-menu{
+            left: 120px;
+            padding: 20px;
+        }
+        .child-drop-menu:hover .grand-child-menu{
+            display: list-item;
+        }
+        /* input{
+            border-radius: 30px;
+            margin-left: 40px;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            border: black 2px solid;
+        } */
+
+
+
+
+    </style>
+</head>
+<body>
+    <!-- <div id="parent">
+        <div id="sub-parent">
+            <div id="child"></div>
+        </div>
+    </div> -->
+
+
+    <nav>
+        <ol>
+            <li>Home</li>
+            <li class="drop-menu">
+                Provinces
+               <ol class="child-menu">
+                   <li class="child-drop-menu">
+                       Punjab
+                  <ol class="grand-child-menu">
+                      <li>Faisalabad</li>
+                      <li>Gujranwala</li>
+                      <li>Multan</li>
+                      <li>Lahore</li>
+                  </ol>
+                   </li>
+                   <li>NWFP</li>
+                   <li>Balochistan</li>
+                   <li>Sindh</li>
+               </ol>
+            </li>
+            <li> Contact</li>
+            <li>About</li>
+            <!-- <input type="search" placeholder="Get Started"> -->
+        </ol>
+       
+    </nav>
+    <!-- <img src="businessman .jpg.jpg" alt=""> -->
+
+
+</body>
+</html>
